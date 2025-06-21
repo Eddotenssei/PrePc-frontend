@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrePc - კომპიუტერის აწყობა</title>
+  <link rel="icon" href="./favicon/Screenshot 2025-06-03 225359.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <i class="fas fa-desktop"></i>
+          <h1>PrePc</h1>
+        </div>
+        <nav class="header-nav">
+          <a href="/admin-page/admin.html" class="nav-link" id="adminBtn" style="display:none;"><i class="fas fa-cogs"></i>Add a compnent (Amin only)</a>
+          <a href="http://127.0.0.1:5500/wishlist/wishlist.html" class="nav-link"><i class="fas fa-shopping-cart"></i> My Wishlist</a>
+          <a href="/form/forma.html" class="nav-link" id="signupBtn"><i class="fas fa-user-plus"></i> Sign Up</a>
+          <a href="/form/signin.html" class="nav-link" id="signinBtn"><i class="fas fa-user-plus"></i> Sign In</a>
+          <a href="#" class="nav-link" id="logoutBtn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+
+        </nav>
+      </div>
+      <p class="header-subtitle">ააწყეთ თქვენი სასურველი კომპიუტერი</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="category-nav">
+      <div class="category-buttons">
+        <button data-part="processors" class="active"><i class="fas fa-microchip"></i>Processors</button>
+        <button data-part="gpus"><i class="fas fa-gamepad"></i>Graphics Cards</button>
+        <button data-part="rams"><i class="fas fa-memory"></i> RAMs</button>
+        <button data-part="motherboards"><i class="fas fa-project-diagram"></i> Motherboards</button>
+        <button data-part="psus"><i class="fas fa-bolt"></i> Power Supplies</button>
+        <button data-part="storages"><i class="fas fa-hdd"></i> Storages</button>
+        <button data-part="cases"><i class="fas fa-box"></i> Cases</button>
+        <button data-part="cpu-coolers"><i class="fas fa-fan"></i> CPU Coolers</button>
+        <button data-part="case-fans"><i class="fas fa-wind"></i> Case Fans</button>
+        <button data-part="operating-systems"><i class="fab fa-windows"></i> Operating Systems</button>
+      </div>
+    </nav>
+
+    <main>
+      <div id="cardContainer" class="card-container">
+        <p class="loading-text"><i class="fas fa-spinner fa-spin"></i> იტვირთება...</p>
+      </div>
+    </main>
+    
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 PrePc • ყველა უფლება დაცულია</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+<!---------------------------SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/jwt-decode@3/build/jwt-decode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

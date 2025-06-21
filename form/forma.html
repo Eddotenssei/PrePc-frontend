@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrePc - Sign up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./forma.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo">
+              <i class="fas fa-desktop"></i>
+              <h1>PrePc</h1>
+            </div>
+            <nav class="header-nav">
+              <a href="/index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+              <a href="/form/signin.html" class="nav-link"><i class="fas fa-user-plus"></i> Sign In</a>
+            </nav>
+          </div>
+          <p class="header-subtitle">შექმენით ახალი ანგარიში</p>
+        </div>
+      </header>
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Create Account</h1>
+            <p>Fill in your details to sign up</p>
+        </div>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group gender-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        <span>Female</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Sign Up</button>
+
+
+        </form>
+    </div>
+<!--SCRIPT------------------------------------->
+    <script src="./forma.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary-color: #3b82f6;
+  --light-blue: #93c5fd;
+  --bg-blue: #eff6ff;
+  --text-color: #1e293b;
+  --text-light: #64748b;
+  --border-radius: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  line-height: 1.6;
+  background: #1e293b;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ===== Header Styles ===== */
+.main-header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  padding: 1rem 0;  
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+.main-header .container {
+  margin: 0 ;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;           
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  user-select: none;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.nav-link:hover {
+  background-color: rgba(255 255 255 / 0.15);
+}
+
+.nav-link.active {
+  background-color: rgba(255 255 255 / 0.25);
+}
+
+.header-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  color: #e0e7ff;
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .header-nav {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .nav-link {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Forms and other styles ===== */
+.forms-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.signup-container {
+  background: var(--bg-blue);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid var(--light-blue);
+  box-sizing: border-box;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-hover);
+}
+
+.signup-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.signup-header p {
+  color: var(--secondary-color);
+  margin: 0;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--light-blue);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: rgb(134, 130, 130);
+  border: 1.5px solid black;
+  color: white;
+}
+
+.form-group ::placeholder {
+  color: rgb(11, 77, 220);
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .forms-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

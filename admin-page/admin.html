@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Components</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./admin.css" />
+</head>
+<header class="main-header">
+  <div class="container">
+    <div class="header-top">
+      <div class="logo">
+        <i class="fas fa-desktop"></i>
+        <h1>PrePc</h1>
+      </div>
+      <nav class="header-nav">
+        <a href="/index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+      </nav>
+    </div>
+    <p class="header-subtitle"></p>
+  </div>
+</header>
+<body>
+  <body>
+  <div class="forms-wrapper">
+    
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Processor</h1></div>
+      <form id="processorForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="number" name="cores" placeholder="Cores" /></div>
+        <div class="form-group"><input type="number" name="threads" placeholder="Threads" /></div>
+        <div class="form-group"><input type="text" name="baseClock" placeholder="Base Clock" /></div>
+        <div class="form-group"><input type="text" name="boostClock" placeholder="Boost Clock" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add Processor</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add GPU</h1></div>
+      <form id="gpuForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="chipset" placeholder="Chipset" /></div>
+        <div class="form-group"><input type="number" name="memorySize" placeholder="Memory Size (GB)" /></div>
+        <div class="form-group"><input type="text" name="memoryType" placeholder="Memory Type" /></div>
+        <div class="form-group"><input type="text" name="coreClock" placeholder="Core Clock" /></div>
+        <div class="form-group"><input type="text" name="boostClock" placeholder="Boost Clock" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add GPU</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add RAM</h1></div>
+      <form id="ramForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="capacity" placeholder="Capacity" /></div>
+        <div class="form-group"><input type="text" name="speed" placeholder="Speed" /></div>
+        <div class="form-group"><input type="text" name="type" placeholder="Type" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add RAM</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Motherboard</h1></div>
+      <form id="motherboardForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="chipset" placeholder="Chipset" /></div>
+        <div class="form-group"><input type="text" name="socket" placeholder="Socket" /></div>
+        <div class="form-group"><input type="text" name="formFactor" placeholder="Form Factor" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add Motherboard</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add PSU</h1></div>
+      <form id="psuForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="number" name="wattage" placeholder="Wattage" /></div>
+        <div class="form-group"><input type="text" name="efficiencyRating" placeholder="Efficiency Rating" /></div>
+        <div class="form-group"><label><input type="checkbox" name="modular" /> Modular</label></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add PSU</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Storage</h1></div>
+      <form id="storageForm">
+        <div class="form-group"><input type="text" name="brand" placeholder="Brand" /></div>
+        <div class="form-group"><input type="text" name="model" placeholder="Model" /></div>
+        <div class="form-group"><input type="text" name="type" placeholder="Type" /></div>
+        <div class="form-group"><input type="number" name="capacity" placeholder="Capacity (GB)" /></div>
+        <div class="form-group"><input type="text" name="interface" placeholder="Interface" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add Storage</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Case</h1></div>
+      <form id="caseForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="brand" placeholder="Brand" /></div>
+        <div class="form-group"><input type="text" name="formFactor" placeholder="Form Factor" /></div>
+        <div class="form-group"><input type="text" name="color" placeholder="Color" /></div>
+        <div class="form-group"><label><input type="checkbox" name="windowed" /> Windowed</label></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add Case</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Case Fan</h1></div>
+      <form id="caseFanForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="brand" placeholder="Brand" /></div>
+        <div class="form-group"><input type="number" name="size" placeholder="Size (mm)" /></div>
+        <div class="form-group"><label><input type="checkbox" name="rgb" /> RGB</label></div>
+        <div class="form-group"><input type="text" name="airflow" placeholder="Airflow" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add Case Fan</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add CPU Cooler</h1></div>
+      <form id="cpuCoolerForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="brand" placeholder="Brand" /></div>
+        <div class="form-group"><input type="text" name="type" placeholder="Type" /></div>
+        <div class="form-group"><input type="number" name="fanSize" placeholder="Fan Size (mm)" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add CPU Cooler</button>
+      </form>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup-header"><h1>Add Operating System</h1></div>
+      <form id="osForm">
+        <div class="form-group"><input type="text" name="name" placeholder="Name" /></div>
+        <div class="form-group"><input type="text" name="version" placeholder="Version" /></div>
+        <div class="form-group"><input type="text" name="architecture" placeholder="Architecture" /></div>
+        <div class="form-group"><input type="text" name="licenseType" placeholder="License Type" /></div>
+        <div class="form-group"><input type="number" name="price" placeholder="Price" /></div>
+        <div class="form-group"><input type="text" name="imageUrl" placeholder="Image URL" /></div>
+        <button type="submit">Add OS</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
