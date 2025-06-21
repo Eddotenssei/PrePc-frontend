@@ -147,7 +147,7 @@ function renderCards(parts, partType) {
 async function addToWishlist(item, category) {
   if (!isLoggedIn()) {
     alert('გთხოვთ, ჩართეთ სისტემა Wishlist-ში ნივთების დასამატებლად.');
-    window.location.href = '/login.html';
+    window.location.href = '/form/signin.html';
     return;
   }
 
